@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="estilo.css" type="text/css" title="estilo del formulario" media="screen,print">
+    <script src="validar.js"></script>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="registro.php" method="post" class="form-register"  onsubmit="validar()">
+        <h2 class="form-titulo">CREAR CUENTA</h2>
+        <div class="contenedor-inputs">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-48">
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input-48">
+            <input type="text" id="correo" name="correo" placeholder="Email" class="input-100" >
+            <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input-48" >
+            <input type="text" id="clave" name="clave" placeholder="Contraseña" class="input-48" >
+            <input type="text" id="telefono" name="telefono" placeholder="Telefono" class="input-100" >
+            <input type="submit" name="boton" value="registrar" class="btn-enviar">
+            <p class="form_link">¿Ya Tines una Cuenta? <a href="#">Ingrese aqui</a></p>            
+            
+        </div>
+    </form>
+
+</body>
+</html>
